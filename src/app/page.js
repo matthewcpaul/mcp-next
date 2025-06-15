@@ -35,7 +35,7 @@ export default function Home() {
               />
               <h3 className="font-semibold mt-5">Bubble Native Mobile Apps</h3>
               <p className="text-[var(--text-secondary)]">Drove the direction, led the design, and executed on the details for the launch of the largest product expansion in Bubble’s history.</p>
-              <p className="text-[var(--text-secondary)]">I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a newly redesigned no-code editor.</p>
+              <p className="text-[var(--text-secondary)]">I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor.</p>
             </div>
             <div className="flex flex-col mt-16">
               <Image
