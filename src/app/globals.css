@@ -17,7 +17,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --text-secondary: var(--color-neutral-400);
+    --text-secondary: var(--color-neutral-300);
   }
 }
 
