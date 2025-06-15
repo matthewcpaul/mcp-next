@@ -1,13 +1,23 @@
 import Image from "next/image";
 import BubbleNativeMobileApps from '../../public/images/bubble-native-mobile-apps.png'
 import TheDotComAutomatedPages from '../../public/images/the-dot-com-automated-pages.png'
+import Avatar from '../../public/images/avatar.png'
 
 export default function Home() {
   return (
-    <div className="max-w-[680px] mx-auto px-5 sm:px-8 pb-18 font-[family-name:var(--font-geist-sans)]">
+    <div className="max-w-[680px] mx-auto px-6 sm:px-8 pb-18 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col">
-        <header className="flex flex-col items-start sticky top-0 py-5 sm:py-6 bg-[var(--background)]">
-          <a className="font-semibold">Matthew Paul</a>
+        <header className="flex flex-col items-start sticky top-0 py-6 bg-[var(--background)]">
+          <div className="flex items-center gap-3">
+            <Image
+              src={Avatar}
+              alt="Avatar"
+              width={28}
+              height={28}
+              className="rounded-full"
+            />
+            <a className="font-semibold">Matthew Paul</a>
+          </div>
         </header>
         <article className="flex flex-col gap-16 mt-10">
           <section className="flex flex-col">
