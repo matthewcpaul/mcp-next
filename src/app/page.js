@@ -16,7 +16,7 @@ export default function Home() {
               height={28}
               className="rounded-full"
             />
-            <a className="font-semibold">Matthew Paul</a>
+            <a className="font-medium">Matthew Paul</a>
           </div>
         </header>
         <article className="flex flex-col gap-16 mt-10">
@@ -33,7 +33,7 @@ export default function Home() {
                 alt="Thumbnail of Bubble Native Mobile Apps"
                 priority
               />
-              <h3 className="font-semibold mt-5">Bubble Native Mobile Apps</h3>
+              <h3 className="font-medium mt-5">Bubble Native Mobile Apps</h3>
               <p className="text-[var(--text-secondary)]">Drove the direction, led the design, and executed on the details for the launch of the largest product expansion in Bubble’s history.</p>
               <p className="text-[var(--text-secondary)]">I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor.</p>
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
                 src={TheDotComAutomatedPages}
                 alt="Thumbnail of The.com Page Generation"
               />
-              <h3 className="font-semibold mt-5">The.com Page Generation</h3>
+              <h3 className="font-medium mt-5">The.com Page Generation</h3>
               <p className="text-[var(--text-secondary)]">Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tooling.</p>
               <p className="text-[var(--text-secondary)]">I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area called Page Generation.</p>
             </div>
