@@ -19,7 +19,7 @@ export default function Home() {
             <a className="font-medium">Matthew Paul</a>
           </div>
         </header>
-        <article className="flex flex-col gap-20 md:gap-24 mt-14">
+        <article className="flex flex-col gap-10 md:gap-16 mt-16 md:mt-24">
           <section className="flex flex-col">
             <h1 className="text-2xl md:text-3xl font-semibold">Product Designer</h1>
             <div className="grid grid-cols-1 mt-3">
