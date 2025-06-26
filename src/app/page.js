@@ -18,7 +18,7 @@ export default function Home() {
             <a className="font-medium">Matthew Paul</a>
           </div>
         </header>
-        <article className="flex flex-col gap-10 md:gap-24 mt-16 md:mt-30">
+        <article className="flex flex-col gap-16 md:gap-24 mt-16 md:mt-30">
           <section className="flex flex-col gap-6 md:gap-8">
             <h1 className="text-4xl md:text-5xl md:leading-14 font-semibold">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
             <div className="grid grid-cols-1 mt-3">
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-6 md:gap-8 mt-16 md:mt-20">
+            <div className="flex flex-col gap-6 md:gap-8 mt-16 md:mt-24">
               <Image
                 src={TheDotComAutomatedPages}
                 alt="Thumbnail of The.com Page Generation"
