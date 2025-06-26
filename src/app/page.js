@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BubbleNativeMobileApps from '../../public/images/bubble-native-mobile-apps.png'
 import TheDotComAutomatedPages from '../../public/images/the-dot-com-automated-pages.png'
 import Avatar from '../../public/images/avatar.png'
 
@@ -19,22 +18,21 @@ export default function Home() {
             <a className="font-medium">Matthew Paul</a>
           </div>
         </header>
-        <article className="flex flex-col gap-10 md:gap-16 mt-16 md:mt-24">
-          <section className="flex flex-col">
-            <h1 className="text-2xl md:text-3xl font-semibold">Product Designer</h1>
+        <article className="flex flex-col gap-10 md:gap-24 mt-16 md:mt-30">
+          <section className="flex flex-col gap-6 md:gap-8">
+            <h1 className="text-4xl md:text-5xl md:leading-14 font-semibold">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
             <div className="grid grid-cols-1 mt-3">
-              <p className="max-w-[30rem] md:max-w-[34rem] text-base md:text-lg text-[var(--text-secondary)]">Software product designer with 12+ years of experience specializing in designer, developer, and collaboration tools.</p>
+              <p className="max-w-[58rem] text-xl md:text-2xl md:leading-9 text-[var(--text-secondary)]">I have 12+ years of experience designing 0 → 1 products, shipping software at scale, and building and maintaining design systems.</p>
             </div>
           </section>
           <section className="flex flex-col">
             <h2 className="text-2xl md:text-3xl font-semibold">Selected Work</h2>
-            <div className="flex flex-col gap-6 md:gap-8 mt-6">
-              <Image
-                src={BubbleNativeMobileApps}
-                alt="Thumbnail of Bubble Native Mobile Apps"
-                priority
-              />
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-16 md:gap-20">
+            <div className="flex flex-col gap-6 md:gap-8 mt-6 md:mt-8">
+              <video autoPlay loop muted preload="auto" playsInline>
+                <source src="/images/bubble-native-mobile-apps.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-0">
                 <h3 className="flex-1 text-base md:text-lg font-semibold">Bubble Native Mobile Apps</h3>
                 <div className="flex flex-col gap-6 md:gap-7 flex-1">
                   <p className="text-base md:text-lg text-[var(--text-secondary)]">Drove the direction, led the design, and executed on the details for the launch of the largest product expansion in Bubble’s history.</p>
@@ -42,12 +40,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-6 mt-16 md:mt-20">
+            <div className="flex flex-col gap-6 md:gap-8 mt-16 md:mt-20">
               <Image
                 src={TheDotComAutomatedPages}
                 alt="Thumbnail of The.com Page Generation"
               />
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-16 md:gap-20">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-0">
                 <h3 className="flex-1 text-base md:text-lg font-semibold">The.com Page Generation</h3>
                 <div className="flex flex-col gap-6 md:gap-7 flex-1">
                   <p className="text-base md:text-lg text-[var(--text-secondary)]">Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.</p>
