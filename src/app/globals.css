@@ -2,8 +2,17 @@
 
 @theme {
   --breakpoint-sm: 45rem;
-  --breakpoint-md: 60rem;
+  --breakpoint-lg: 73rem;
   --color-neutral-300: #b3b3b3;
+  --text-base: 1rem;
+  --text-base--line-height: 1.75rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 2rem;
+  --text-xl: 1.75rem;
+  --text-xl--line-height: 2.5rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: 3.5rem;
+  --text-3xl--line-height: 4rem;
 }
 
 :root {
@@ -12,19 +21,19 @@
   --text-secondary: var(--color-neutral-600);
 }
 
-@theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
     --text-secondary: var(--color-neutral-300);
   }
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 body {
