@@ -21,7 +21,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
           <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
         ) : null
       }
-      <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-0">
+      <div className="flex flex-col items-start gap-2 sm:flex-row sm:gap-0">
         <div className="flex-1 flex items-center gap-3">
           {logoSrc ? (
             <Image
