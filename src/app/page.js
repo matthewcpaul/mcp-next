@@ -7,12 +7,13 @@ export default function Home() {
       <main className="flex flex-col max-w-[70rem] mx-auto">
         <header className="flex flex-col items-start sticky top-0 py-6 bg-[var(--background)]">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="/images/Avatar.png"
               alt="Avatar"
               width={28}
               height={28}
               className="rounded-full"
+              unoptimized
             />
             <span className="text-base font-medium">Matthew Paul</span>
           </div>
