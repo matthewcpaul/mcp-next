@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Avatar from '../../public/images/Avatar.png'
 import ProjectCard from '../components/ProjectCard'
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
         <header className="flex flex-col items-start sticky top-0 py-6 bg-[var(--background)]">
           <div className="flex items-center gap-3">
             <Image
-              src={Avatar}
+              src="/images/Avatar.png"
               alt="Avatar"
               width={28}
               height={28}
