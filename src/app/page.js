@@ -22,7 +22,7 @@ export default function Home() {
           <section className="flex flex-col gap-8 lg:gap-14">
             <h1 className="text-2xl-small lg:text-2xl font-semibold tracking-tight">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
             <div className="grid grid-cols-1">
-              <p className="text-lg lg:text-xl text-[var(--text-secondary)]">12+ years of experience designing 0 → 1 products, shipping software at scale, and building and maintaining design systems.</p>
+              <p className="text-lg lg:text-xl text-[var(--text-secondary)]">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
             </div>
           </section>
           <section className="flex flex-col">
