@@ -1,22 +1,26 @@
 import Image from "next/image";
 import ProjectCard from '../components/ProjectCard'
 import Avatar from '../../public/images/avatar.png'
+import { ModeToggle } from '../components/mode-toggle'
 
 export default function Home() {
   return (
     <div className="px-6 sm:px-12 lg:px-20 pb-18 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col max-w-[70rem] mx-auto">
-        <header className="flex flex-col items-start sticky top-0 py-6 bg-[var(--background)]">
-          <div className="flex items-center gap-3">
-            <Image
-              src={Avatar}
-              alt="Avatar"
-              width={28}
-              height={28}
-              className="rounded-full"
-              unoptimized
-            />
-            <span className="text-base font-medium">Matthew Paul</span>
+        <header className="sticky top-0 py-6 bg-[var(--background)]">
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center gap-3">
+              <Image
+                src={Avatar}
+                alt="Avatar"
+                width={28}
+                height={28}
+                className="rounded-full"
+                unoptimized
+              />
+              <span className="text-base font-medium">Matthew Paul</span>
+            </div>
+            <ModeToggle />
           </div>
         </header>
         <article className="flex flex-col gap-16 mt-16 lg:gap-32 lg:mt-40">
