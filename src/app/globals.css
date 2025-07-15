@@ -96,6 +96,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+html {
+  @apply antialiased;
+}
+
 h1, h2, h3, p, a {
   text-wrap: pretty;
   text-box: trim-both cap alphabetic;

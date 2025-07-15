@@ -27,7 +27,7 @@ export default function Home() {
           <section className="flex flex-col gap-8 lg:gap-14">
             <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
             <div className="grid grid-cols-1">
-              <p className="text-lg text-[var(--text-secondary)] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
+              <p className="text-lg text-[var(--text-secondary)] max-w-[60rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
             </div>
           </section>
           <section className="flex flex-col">
