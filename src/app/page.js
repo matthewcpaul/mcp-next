@@ -25,13 +25,13 @@ export default function Home() {
         </header>
         <article className="flex flex-col gap-16 mt-16 lg:gap-32 lg:mt-40">
           <section className="flex flex-col gap-8 lg:gap-14">
-            <h1 className="text-2xl-small lg:text-2xl font-semibold tracking-tight">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
+            <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
             <div className="grid grid-cols-1">
-              <p className="text-lg lg:text-xl text-[var(--text-secondary)]">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
+              <p className="text-lg text-[var(--text-secondary)] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
             </div>
           </section>
           <section className="flex flex-col">
-            <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Selected Work</h2>
+            <h2 className="text-lg font-semibold tracking-tight lg:text-xl">Selected Work</h2>
             <div className="flex flex-col gap-10 lg:gap-22">
               <ProjectCard
                 videoSrc="/images/BubbleNativeMobileTabBar.mp4"
@@ -75,8 +75,8 @@ export default function Home() {
               />
               <ProjectCard
                 imageSrc="/images/TheDotCom.png"
-                imageAlt="The.com Navigation UI"
-                title="The.com Navigation UI"
+                imageAlt="The.com CSS Sheet Groups"
+                title="The.com CSS Sheet Groups"
                 logoSrc="/images/LogoTheDotCom.svg"
                 paragraphs={[
                   "Placeholder"
@@ -92,6 +92,7 @@ export default function Home() {
                 ]}
               />
               <ProjectCard
+                videoSrc="/images/InVisionInspectMotion.mp4"
                 imageSrc="/images/TheDotCom.png"
                 imageAlt="InVision Inspect Motion"
                 title="InVision Inspect Motion"
@@ -101,6 +102,7 @@ export default function Home() {
                 ]}
               />
               <ProjectCard
+                videoSrc="/images/InVisionStudioJiraIntegration.mp4"
                 imageSrc="/images/TheDotCom.png"
                 imageAlt="InVision Studio Jira Integration"
                 title="InVision Studio Jira Integration"
