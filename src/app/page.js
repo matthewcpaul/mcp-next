@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from '../components/project-card'
 import Avatar from '../../public/images/avatar.png'
 import { ModeToggle } from '../components/mode-toggle'
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="px-6 sm:px-12 lg:px-20 pb-18 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col max-w-[70rem] mx-auto">
-        <header className="sticky top-0 py-6 bg-[var(--background)]">
+        <header className="sticky top-0 py-6 bg-[var(--background)] z-10">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center gap-3">
               <Image
