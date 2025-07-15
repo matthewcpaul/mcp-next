@@ -23,8 +23,8 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col gap-16 px-6 mt-16 sm:px-12 lg:px-20 lg:gap-32 lg:mt-40">
-          <div className="flex flex-col max-w-[70rem] mx-auto">
+        <article className="flex flex-col px-6 mt-16 sm:px-12 lg:px-20 lg:mt-40">
+          <div className="flex flex-col gap-16 max-w-[70rem] mx-auto lg:gap-32">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
               <p className="text-lg text-[var(--text-secondary)] max-w-[64rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
