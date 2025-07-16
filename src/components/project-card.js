@@ -11,7 +11,7 @@ const Logo = () => (
 
 export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, logoSrc }) {
   return (
-    <div className="flex flex-col gap-6 mt-6 lg:gap-8 lg:mt-10">
+    <div className="flex flex-col gap-4 mt-6 lg:gap-8 lg:mt-10">
       {videoSrc ? (
         <video autoPlay loop muted preload="auto" playsInline>
           <source src={videoSrc} type="video/mp4" />

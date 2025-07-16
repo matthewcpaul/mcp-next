@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="pb-18">
       <main className="flex flex-col">
-        <header className="sticky top-0 py-4 px-6 sm:px-12 lg:px-20 bg-[var(--background)] bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/90 z-10">
+        <header className="sticky top-0 py-4 px-6 sm:px-12 lg:px-20 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/90 z-10">
           <div className="flex items-center justify-between w-full max-w-[70rem] mx-auto">
             <div className="flex items-center gap-3">
               <Image
@@ -44,6 +44,7 @@ export default function Home() {
                   ]}
                 />
                 <ProjectCard
+                  videoSrc="/images/BuubleEditorUI.mp4"
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
