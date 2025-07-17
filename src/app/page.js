@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import ProjectCard from '../components/project-card'
 import Avatar from '../../public/images/avatar.png'
@@ -23,7 +25,7 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col px-6 mt-16 sm:px-12 lg:px-20 lg:mt-40">
+        <article className="flex flex-col px-6 mt-24 sm:px-12 lg:px-20 lg:mt-40">
           <div className="flex flex-col gap-16 max-w-[70rem] mx-auto lg:gap-32">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>

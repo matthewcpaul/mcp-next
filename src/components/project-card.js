@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
 
 const Logo = () => (
@@ -10,17 +11,57 @@ const Logo = () => (
 );
 
 export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, logoSrc }) {
+  const videoRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!videoSrc) return;
+
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.4 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, [videoSrc]);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isVisible) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isVisible]);
+
   return (
     <div className="flex flex-col gap-4 mt-6 lg:gap-8 lg:mt-10">
       {videoSrc ? (
-        <video autoPlay loop muted preload="auto" playsInline>
-          <source src={videoSrc} type="video/mp4" />
+        <video
+          ref={videoRef}
+          src={videoSrc}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="none"
+        >
           {imageSrc && <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />}
         </video>
-        ) : imageSrc ? (
-          <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
-        ) : null
-      }
+      ) : imageSrc ? (
+        <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
+      ) : null}
       <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-0">
         <div className="flex-1 flex items-center gap-3">
           {logoSrc ? (
