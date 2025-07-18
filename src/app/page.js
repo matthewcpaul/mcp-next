@@ -46,7 +46,7 @@ export default function Home() {
                   ]}
                 />
                 <ProjectCard
-                  videoSrc="/images/BuubleEditorUI.mp4"
+                  videoSrc="/images/BubbleEditorUI.mp4"
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
@@ -55,7 +55,7 @@ export default function Home() {
                     "Placeholder"
                   ]}
                 />
-                <ProjectCard
+                {/* <ProjectCard
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="Bubble Pop Design System"
                   title="Bubble Pop Design System"
@@ -63,7 +63,7 @@ export default function Home() {
                   paragraphs={[
                     "Placeholder"
                   ]}
-                />
+                /> */}
                 <ProjectCard
                   videoSrc="/images/TheDotCom.mp4"
                   imageSrc="/images/TheDotCom.png"
@@ -84,7 +84,7 @@ export default function Home() {
                     "Placeholder"
                   ]}
                 />
-                <ProjectCard
+                {/* <ProjectCard
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="QA Wolf Web App"
                   title="QA Wolf Web App"
@@ -92,7 +92,7 @@ export default function Home() {
                   paragraphs={[
                     "Placeholder"
                   ]}
-                />
+                /> */}
                 <ProjectCard
                   videoSrc="/images/InVisionInspectMotion.mp4"
                   imageSrc="/images/TheDotCom.png"
