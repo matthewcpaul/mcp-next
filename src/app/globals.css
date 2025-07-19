@@ -6,6 +6,7 @@
 @theme {
   --breakpoint-sm: 45rem;
   --breakpoint-lg: 73rem;
+  --breakpoint-xl: 94rem;
   --color-neutral-300: #b3b3b3;
   --text-base: 1rem;
   --text-base--line-height: 1.75rem;

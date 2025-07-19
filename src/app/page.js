@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="pb-18">
       <main className="flex flex-col">
-        <header className="sticky top-0 py-4 px-6 sm:px-12 lg:px-20 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/90 z-10">
-          <div className="flex items-center justify-between w-full max-w-[70rem] mx-auto">
+        <header className="sticky top-0 py-4 px-6 sm:px-12 lg:px-20 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
+          <div className="flex items-center justify-between w-full max-w-[62rem] mx-auto xl:max-w-[70rem]">
             <div className="flex items-center gap-3">
               <Image
                 src={Avatar}
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </header>
         <article className="flex flex-col px-6 mt-24 sm:px-12 lg:px-20 lg:mt-40">
-          <div className="flex flex-col gap-16 max-w-[70rem] mx-auto lg:gap-32">
+          <div className="flex flex-col gap-16 max-w-[62rem] mx-auto lg:gap-32 xl:max-w-[70rem]">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
               <p className="text-lg text-[var(--text-secondary)] max-w-[64rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
@@ -36,7 +36,7 @@ export default function Home() {
               <div className="flex flex-col gap-10 lg:gap-22">
                 <ProjectCard
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
-                  imageSrc="/images/TheDotCom.png"
+                  imageSrc="/images/BubbleNativeMobileTabBar.png"
                   imageAlt="Bubble Native Mobile Apps"
                   title="Bubble Native Mobile Apps"
                   logoSrc="/images/LogoBubble.svg"
@@ -47,7 +47,7 @@ export default function Home() {
                 />
                 <ProjectCard
                   videoSrc="/images/BubbleEditorUI.mp4"
-                  imageSrc="/images/TheDotCom.png"
+                  imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
                   logoSrc="/images/LogoBubble.svg"
@@ -66,7 +66,7 @@ export default function Home() {
                 /> */}
                 <ProjectCard
                   videoSrc="/images/TheDotComCMS.mp4"
-                  imageSrc="/images/TheDotCom.png"
+                  imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   title="The.com CMS"
                   logoSrc="/images/LogoTheDotCom.svg"
@@ -95,7 +95,7 @@ export default function Home() {
                 /> */}
                 <ProjectCard
                   videoSrc="/images/InVisionInspectMotion.mp4"
-                  imageSrc="/images/TheDotCom.png"
+                  imageSrc="/images/InVisionInspectMotion.png"
                   imageAlt="InVision Inspect Motion"
                   title="InVision Inspect Motion"
                   logoSrc="/images/LogoInvision.svg"
@@ -105,7 +105,7 @@ export default function Home() {
                 />
                 <ProjectCard
                   videoSrc="/images/InVisionStudioJiraIntegration.mp4"
-                  imageSrc="/images/TheDotCom.png"
+                  imageSrc="/images/InVisionStudioJiraIntegration.png"
                   imageAlt="InVision Studio Jira Integration"
                   title="InVision Studio Jira Integration"
                   logoSrc="/images/LogoInvision.svg"
