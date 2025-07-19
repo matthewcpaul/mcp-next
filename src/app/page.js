@@ -65,10 +65,10 @@ export default function Home() {
                   ]}
                 /> */}
                 <ProjectCard
-                  videoSrc="/images/TheDotCom.mp4"
+                  videoSrc="/images/TheDotComCMS.mp4"
                   imageSrc="/images/TheDotCom.png"
-                  imageAlt="The.com Page Generation"
-                  title="The.com Page Generation"
+                  imageAlt="The.com CMS"
+                  title="The.com CMS"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
                     "Led product, design, and design systems for The.com's no-code, sheet-based website builder and CMS tools.",
