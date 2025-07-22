@@ -29,7 +29,7 @@ export default function Home() {
           <div className="flex flex-col gap-16 max-w-[62rem] mx-auto lg:gap-32 xl:max-w-[70rem]">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
-              <p className="text-lg text-[var(--text-secondary)] max-w-[64rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
+              <p className="text-xl-small text-[var(--text-secondary)] max-w-[64rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
             </section>
             <section className="flex flex-col">
               <h2 className="text-lg font-semibold tracking-tight lg:text-xl">Selected Work</h2>
@@ -41,18 +41,19 @@ export default function Home() {
                   title="Bubble Native Mobile Apps"
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
-                    "Drove the direction, led the design, and executed on the details for the launch of the largest product expansion in Bubble's history.",
+                    "Drove the direction, led the design, and executed on the details for the launch of the largest product expansion in Bubble’s history.",
                     "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
                   ]}
                 />
                 <ProjectCard
-                  videoSrc="/images/BubbleEditorUI.mp4"
+                  videoSrc="/images/BubbleEditorUI2.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
-                    "Placeholder"
+                    "Designed the new UI for the Bubble editor, which is used by over 100,000 developers to build their apps.",
+                    "I drove the design for the toolbar, tab bar, elements tree, property editor, menus, and dark mode. I worked with multiple designers and engineering teams to help with implementation and consistency."
                   ]}
                 />
                 {/* <ProjectCard
@@ -68,11 +69,11 @@ export default function Home() {
                   videoSrc="/images/TheDotComCMS.mp4"
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
-                  title="The.com CMS"
+                  title="The.com CMS Sheets"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
-                    "Led product, design, and design systems for The.com's no-code, sheet-based website builder and CMS tools.",
-                    "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area called Page Generation."
+                    "Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.",
+                    "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
                   ]}
                 />
                 <ProjectCard

@@ -77,7 +77,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
           )}
           <h3 className="text-base lg:text-lg font-semibold tracking-tight">{title}</h3>
         </div>
-        <div className="flex flex-col gap-6 flex-1 sm:pt-[8px] lg:pt-[7px] lg:gap-7">
+        <div className="flex flex-col gap-[1.625rem] flex-1 sm:pt-[8px] lg:pt-[7px] lg:gap-8">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (
               <p key={index} className="text-base lg:text-lg text-[var(--text-secondary)]">
