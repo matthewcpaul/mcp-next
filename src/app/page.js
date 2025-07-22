@@ -52,8 +52,8 @@ export default function Home() {
                   title="Bubble Editor UI"
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
-                    "Designed the new UI for the Bubble editor, which is used by over 100,000 developers to build their apps.",
-                    "I drove the design for the toolbar, tab bar, elements tree, property editor, menus, and dark mode. I worked with multiple designers and engineering teams to help with implementation and consistency."
+                    "Designed the new UI for the Bubble editor, which is used by over 5M developers to build their apps.",
+                    "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I worked with multiple designers and engineering teams to help with implementation and consistency."
                   ]}
                 />
                 {/* <ProjectCard
