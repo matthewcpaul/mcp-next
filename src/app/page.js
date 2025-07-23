@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="pb-18">
       <main className="flex flex-col">
-        <header className="sticky top-0 py-4 px-6 sm:px-12 lg:px-20 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
+        <header className="sticky top-0 py-4 px-4 sm:px-12 lg:px-20 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
           <div className="flex items-center justify-between w-full max-w-[62rem] mx-auto xl:max-w-[70rem]">
             <div className="flex items-center gap-3">
               <Image
@@ -25,7 +25,7 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col px-6 mt-24 sm:px-12 lg:px-20 lg:mt-40">
+        <article className="flex flex-col px-4 mt-20 sm:px-12 lg:px-20 lg:mt-36">
           <div className="flex flex-col gap-16 max-w-[62rem] mx-auto lg:gap-32 xl:max-w-[70rem]">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
