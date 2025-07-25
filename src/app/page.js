@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="pb-18">
       <main className="flex flex-col">
-        <header className="sticky top-0 py-4 px-4 sm:px-12 lg:px-20 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
-          <div className="flex items-center justify-between w-full max-w-[62rem] mx-auto xl:max-w-[70rem]">
+        <header className="sticky top-0 py-4 px-4 lg:px-20 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
+          <div className="flex items-center justify-between w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
             <div className="flex items-center gap-3">
               <Image
                 src={Avatar}
@@ -25,15 +25,15 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col px-4 mt-20 sm:px-12 lg:px-20 lg:mt-36">
-          <div className="flex flex-col gap-16 max-w-[62rem] mx-auto lg:gap-32 xl:max-w-[70rem]">
+        <article className="flex flex-col px-4 mt-16 sm:mt-16 lg:px-20 lg:mt-28">
+          <div className="flex flex-col gap-20 max-w-[64rem] mx-auto lg:gap-32 xl:max-w-[70rem]">
             <section className="flex flex-col gap-8 lg:gap-14">
               <h1 className="text-2xl-small font-semibold tracking-tight lg:text-2xl">Product designer and design engineer specializing in designer, developer, and collaboration tools</h1>
-              <p className="text-xl-small text-[var(--text-secondary)] max-w-[64rem] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
+              <p className="text-xl-small text-[var(--text-secondary)] lg:text-xl">12+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems.</p>
             </section>
             <section className="flex flex-col">
               <h2 className="text-lg font-semibold tracking-tight lg:text-xl">Selected Work</h2>
-              <div className="flex flex-col gap-10 lg:gap-22">
+              <div className="flex flex-col gap-16 lg:gap-20">
                 <ProjectCard
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"

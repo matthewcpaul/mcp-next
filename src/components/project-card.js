@@ -80,12 +80,12 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
         <div className="flex flex-col gap-[1.625rem] flex-1 sm:pt-[8px] lg:pt-[7px] lg:gap-8">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-base lg:text-lg text-[var(--text-secondary)]">
+              <p key={index} className="text-base text-[var(--text-secondary)] lg:text-lg">
                 {paragraph}
               </p>
             ))
           ) : (
-            <p className="text-base lg:text-lg text-[var(--text-secondary)]">
+            <p>
               {paragraphs}
             </p>
           )}
