@@ -19,7 +19,7 @@
   --text-xl-small: 1.5rem;
   --text-xl-small--line-height: 2.25rem;
   --text-2xl-small: 2.5rem;
-  --text-2xl-small--line-height: 3.25rem;
+  --text-2xl-small--line-height: 3.125rem;
 }
 
 :root {
