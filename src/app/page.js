@@ -76,7 +76,7 @@ export default function Home() {
                     "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
                   ]}
                 />
-                <ProjectCard
+                {/* <ProjectCard
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
@@ -84,7 +84,7 @@ export default function Home() {
                   paragraphs={[
                     "Placeholder"
                   ]}
-                />
+                /> */}
                 {/* <ProjectCard
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="QA Wolf Web App"

@@ -1,7 +1,7 @@
 import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "Matthew Paul",
@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
         >
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
