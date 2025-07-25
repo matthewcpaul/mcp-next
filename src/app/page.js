@@ -33,7 +33,7 @@ export default function Home() {
             </section>
             <section className="flex flex-col">
               <h2 className="text-lg font-semibold tracking-tight lg:text-xl">Selected Work</h2>
-              <div className="flex flex-col gap-16 lg:gap-20">
+              <div className="flex flex-col gap-20 mt-6 lg:gap-32 lg:mt-10">
                 <ProjectCard
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
