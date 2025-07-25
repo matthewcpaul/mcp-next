@@ -46,7 +46,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, company, tit
   }, [isVisible]);
 
   return (
-    <div className="flex flex-col gap-7 lg:gap-8">
+    <div className="flex flex-col gap-6 lg:gap-8">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-3">
           {logoSrc ? (
