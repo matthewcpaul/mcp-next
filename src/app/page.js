@@ -27,13 +27,13 @@ export default function Home() {
         </header>
         <article className="flex flex-col px-4 mt-16 lg:mt-28">
           <div className="flex flex-col gap-14 max-w-[64rem] mx-auto lg:gap-20 xl:max-w-[70rem]">
-            <section className="flex flex-col gap-3 lg:gap-4 max-w-[32rem]">
-              <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software<br />Product Designer</h1>
-              <p className="text-base text-[var(--text-secondary)] text-balance lg:text-lg">10+ years of experience specializing in 0 → 1 designer, developer, and collaboration tools.</p>
+            <section className="flex flex-col gap-3 lg:gap-4 max-w-[48rem]">
+              <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software product designer and design engineer</h1>
+              <p className="text-base text-[var(--text-secondary)] text-balance lg:text-lg lg:text-wrap">10+ years of experience designing 0 → 1 products and building design systems. Specializing in designer, developer, and collaboration tools.</p>
             </section>
             <section className="flex flex-col">
               {/* <h2 className="text-lg font-semibold tracking-tight lg:text-xl">Selected Work</h2> */}
-              <div className="flex flex-col gap-16 lg:gap-24">
+              <div className="flex flex-col gap-8 -translate-x-4 w-[calc(100%+2rem)] lg:gap-16 lg:-translate-x-8 lg:w-[calc(100%+4rem)]">
                 <ProjectCard
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
@@ -44,6 +44,9 @@ export default function Home() {
                   paragraphs={[
                     "Drove the product direction and design for the launch of the largest product expansion in Bubble’s history.",
                     // "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
+                  ]}
+                  images={[
+                    { src: "/images/BubbleNativeMobileTabItems.png", alt: "" }
                   ]}
                 />
                 <ProjectCard

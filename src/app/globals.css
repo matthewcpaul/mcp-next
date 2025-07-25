@@ -8,18 +8,18 @@
   --breakpoint-xl: 94rem;
   --color-neutral-300: #b3b3b3;
   --text-base: 1rem;
-  --text-base--line-height: 1.625rem;
+  --text-base--line-height: 1.5rem;
   --text-lg: 1.25rem;
-  --text-lg--line-height: 2rem;
+  --text-lg--line-height: 1.875rem;
   --text-xl: 1.75rem;
   --text-xl--line-height: 2.625rem;
   --text-2xl: 3.5rem;
-  --text-2xl--line-height: 4.125rem;
+  --text-2xl--line-height: 4rem;
 
   --text-xl-small: 1.5rem;
   --text-xl-small--line-height: 2.25rem;
   --text-2xl-small: 2.5rem;
-  --text-2xl-small--line-height: 3.125rem;
+  --text-2xl-small--line-height: 3rem;
 }
 
 :root {

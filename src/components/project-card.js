@@ -51,8 +51,8 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
   );
 
   return (
-    <div className="flex flex-col gap-6 lg:gap-8">
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-6 py-4 px-4 bg-accent/30 border-y border-border/60 lg:gap-8 lg:py-8 lg:px-8 lg:border-0 lg:outline lg:-outline-offset-1 lg:outline-border/60">
+      <div className="flex flex-col gap-2 max-w-[31rem]">
         <div className="flex items-center gap-3">
           {logoSrc ? (
             <Image
@@ -68,7 +68,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
           <span className="text-sm font-medium">{company}</span>
         </div>
         <h3 className="text-xl-small font-semibold tracking-tight lg:text-xl">{title}</h3>
-        <div className="flex flex-col gap-4 max-w-[32rem]">
+        <div className="flex flex-col gap-4">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (
               <p key={index} className="text-base text-[var(--text-secondary)] lg:text-base">
@@ -82,36 +82,38 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
           )}
         </div>
       </div>
-      {videoSrc ? (
-        <video
-          ref={videoRef}
-          src={videoSrc}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-        >
-          {imageSrc && <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />}
-        </video>
-      ) : imageSrc ? (
-        <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
-      ) : null}
-      {/* Render additional images below the video if any */}
-      {normalizedImages.length > 0 && (
-        <div className="flex flex-col gap-10">
-          {normalizedImages.map((img, idx) => (
-            <Image
-              key={img.src + idx}
-              src={img.src}
-              alt={img.alt || title}
-              width={1200}
-              height={800}
-              className="w-full h-auto"
-            />
-          ))}
-        </div>
-      )}
+      <div className="flex flex-col gap-4 lg:gap-8">
+        {videoSrc ? (
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+          >
+            {imageSrc && <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />}
+          </video>
+        ) : imageSrc ? (
+          <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
+        ) : null}
+        {/* Render additional images below the video if any */}
+        {normalizedImages.length > 0 && (
+          <div className="flex flex-col gap-4 lg:gap-8">
+            {normalizedImages.map((img, idx) => (
+              <Image
+                key={img.src + idx}
+                src={img.src}
+                alt={img.alt || title}
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
