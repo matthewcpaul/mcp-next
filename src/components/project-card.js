@@ -10,7 +10,7 @@ const Logo = () => (
   </div>
 );
 
-export default function ProjectCard({ videoSrc, imageSrc, imageAlt, company, title, paragraphs, logoSrc }) {
+export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [], company, title, paragraphs, logoSrc }) {
   const videoRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -44,6 +44,11 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, company, tit
       }
     }
   }, [isVisible]);
+
+  // Normalize images prop to array of {src, alt}
+  const normalizedImages = images.map(img =>
+    typeof img === 'string' ? { src: img, alt: title } : img
+  );
 
   return (
     <div className="flex flex-col gap-6 lg:gap-8">
@@ -92,6 +97,21 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, company, tit
       ) : imageSrc ? (
         <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
       ) : null}
+      {/* Render additional images below the video if any */}
+      {normalizedImages.length > 0 && (
+        <div className="flex flex-col gap-10">
+          {normalizedImages.map((img, idx) => (
+            <Image
+              key={img.src + idx}
+              src={img.src}
+              alt={img.alt || title}
+              width={1200}
+              height={800}
+              className="w-full h-auto"
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
-} 
+}
