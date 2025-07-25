@@ -10,7 +10,7 @@ const Logo = () => (
   </div>
 );
 
-export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, logoSrc }) {
+export default function ProjectCard({ videoSrc, imageSrc, imageAlt, company, title, paragraphs, logoSrc }) {
   const videoRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -46,7 +46,37 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
   }, [isVisible]);
 
   return (
-    <div className="flex flex-col gap-4 lg:gap-8">
+    <div className="flex flex-col gap-7 lg:gap-8">
+      <div className="flex flex-col gap-2">
+        <div className="flex items-center gap-3">
+          {logoSrc ? (
+            <Image
+              src={logoSrc}
+              alt="Company Avatar"
+              width={28}
+              height={28}
+              className="rounded-full"
+            />
+          ) : (
+            <Logo />
+          )}
+          <span className="text-sm font-medium">{company}</span>
+        </div>
+        <h3 className="text-xl-small font-semibold tracking-tight lg:text-xl">{title}</h3>
+        <div className="flex flex-col gap-4 max-w-[32rem]">
+          {Array.isArray(paragraphs) ? (
+            paragraphs.map((paragraph, index) => (
+              <p key={index} className="text-base text-[var(--text-secondary)] lg:text-base">
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p>
+              {paragraphs}
+            </p>
+          )}
+        </div>
+      </div>
       {videoSrc ? (
         <video
           ref={videoRef}
@@ -62,35 +92,6 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
       ) : imageSrc ? (
         <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
       ) : null}
-      <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-0">
-        <div className="flex-1 flex items-center gap-3">
-          {logoSrc ? (
-            <Image
-              src={logoSrc}
-              alt="Company Avatar"
-              width={28}
-              height={28}
-              className="rounded-full"
-            />
-          ) : (
-            <Logo />
-          )}
-          <h3 className="text-base lg:text-lg font-semibold tracking-tight">{title}</h3>
-        </div>
-        <div className="flex flex-col gap-[1.625rem] flex-1 sm:pt-[8px] lg:pt-[7px] lg:gap-8">
-          {Array.isArray(paragraphs) ? (
-            paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-base text-[var(--text-secondary)] lg:text-lg">
-                {paragraph}
-              </p>
-            ))
-          ) : (
-            <p>
-              {paragraphs}
-            </p>
-          )}
-        </div>
-      </div>
     </div>
   );
 } 
