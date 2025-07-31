@@ -34,7 +34,7 @@ export default function Home() {
             </section>
             <section className="flex flex-col gap-5 lg:gap-6">
               <div className={GeistMono.className}>
-                <h2 className="text-sm tracking-wider uppercase">Selected Work</h2>
+                <h2 className="text-sm font-medium tracking-wider uppercase">Selected Work</h2>
               </div>
               <div className="flex flex-col gap-16 lg:gap-24">
                 <ProjectCard
