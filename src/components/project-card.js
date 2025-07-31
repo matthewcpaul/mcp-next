@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 
 const Logo = () => (
   <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center">
@@ -21,7 +21,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.4 }
+      { threshold: 0.6 }
     );
 
     if (videoRef.current) {
@@ -51,38 +51,8 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
   );
 
   return (
-    <div className="flex flex-col gap-6 py-4 px-4 bg-accent/30 border-y border-border/60 lg:gap-8 lg:py-8 lg:px-8 lg:border-0 lg:outline lg:-outline-offset-1 lg:outline-border/60">
-      <div className="flex flex-col gap-2 max-w-[31rem]">
-        <div className="flex items-center gap-3">
-          {logoSrc ? (
-            <Image
-              src={logoSrc}
-              alt="Company Avatar"
-              width={28}
-              height={28}
-              className="rounded-full"
-            />
-          ) : (
-            <Logo />
-          )}
-          <span className="text-sm font-medium">{company}</span>
-        </div>
-        <h3 className="text-xl-small font-semibold tracking-tight lg:text-xl">{title}</h3>
-        <div className="flex flex-col gap-4">
-          {Array.isArray(paragraphs) ? (
-            paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-base text-[var(--text-secondary)] lg:text-base">
-                {paragraph}
-              </p>
-            ))
-          ) : (
-            <p>
-              {paragraphs}
-            </p>
-          )}
-        </div>
-      </div>
-      <div className="flex flex-col gap-4 lg:gap-8">
+    <div className="flex flex-col gap-5 lg:gap-6">
+      <div className="flex flex-col">
         {videoSrc ? (
           <video
             ref={videoRef}
@@ -99,7 +69,7 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
           <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
         ) : null}
         {/* Render additional images below the video if any */}
-        {normalizedImages.length > 0 && (
+        {/* {normalizedImages.length > 0 && (
           <div className="flex flex-col gap-4 lg:gap-8">
             {normalizedImages.map((img, idx) => (
               <Image
@@ -112,7 +82,23 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
               />
             ))}
           </div>
-        )}
+        )} */}
+      </div>
+      <div className="flex flex-col gap-2 max-w-[31rem]">
+        <h3 className="text-base font-semibold tracking-tight lg:text-lg">{title}</h3>
+        <div className="flex flex-col gap-4">
+          {Array.isArray(paragraphs) ? (
+            paragraphs.map((paragraph, index) => (
+              <p key={index} className="text-base text-[var(--text-secondary)] lg:text-lg">
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p>
+              {paragraphs}
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

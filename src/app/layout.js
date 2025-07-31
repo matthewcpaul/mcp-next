@@ -1,7 +1,7 @@
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
-import { Analytics } from "@vercel/analytics/next"
+import { ThemeProvider } from '@/components/theme-provider'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: "Matthew Paul",
