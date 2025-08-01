@@ -26,13 +26,13 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col px-4 mt-16 lg:mt-28">
+        <article className="flex flex-col px-4 mt-24 lg:mt-28">
           <div className="flex flex-col gap-14 max-w-[64rem] mx-auto lg:gap-20 xl:max-w-[70rem]">
             <section className="flex flex-col gap-3 max-w-[24rem] sm:max-w-[28rem] lg:gap-4 lg:max-w-[32rem]">
               <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software<br />product designer</h1>
               <p className="text-base text-[var(--text-secondary)] lg:text-lg">10+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems. Specializing in designer, developer, and collaboration tools.</p>
             </section>
-            <section className="flex flex-col gap-5 lg:gap-6">
+            <section className="flex flex-col gap-6 lg:gap-7">
               <div className={GeistMono.className}>
                 <h2 className="text-sm font-medium tracking-wider uppercase">Selected Work</h2>
               </div>
