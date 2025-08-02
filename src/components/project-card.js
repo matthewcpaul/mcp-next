@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 const Logo = () => (
   <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center">
@@ -10,7 +9,7 @@ const Logo = () => (
   </div>
 );
 
-export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [], company, title, paragraphs, logoSrc }) {
+export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs}) {
   const videoRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -45,11 +44,6 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
     }
   }, [isVisible]);
 
-  // Normalize images prop to array of {src, alt}
-  const normalizedImages = images.map(img =>
-    typeof img === 'string' ? { src: img, alt: title } : img
-  );
-
   return (
     <div className="flex flex-col gap-5 lg:gap-6">
       <div className="flex flex-col">
@@ -68,25 +62,10 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, images = [],
         ) : imageSrc ? (
           <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
         ) : null}
-        {/* Render additional images below the video if any */}
-        {/* {normalizedImages.length > 0 && (
-          <div className="flex flex-col gap-4 lg:gap-8">
-            {normalizedImages.map((img, idx) => (
-              <Image
-                key={img.src + idx}
-                src={img.src}
-                alt={img.alt || title}
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-              />
-            ))}
-          </div>
-        )} */}
       </div>
       <div className="flex flex-col gap-2 max-w-[31rem]">
         <h3 className="text-base font-semibold tracking-tight lg:text-lg">{title}</h3>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (
               <p key={index} className="text-base text-[var(--text-secondary)] lg:text-lg">
