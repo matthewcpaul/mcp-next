@@ -46,11 +46,8 @@ export default function Home() {
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
                     "Drove the product direction and design for the launch of the largest product expansion in Bubble’s history.",
-                    // "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
+                    "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
                   ]}
-                  // images={[
-                  //   { src: "/images/BubbleNativeMobileTabItems.png", alt: "" }
-                  // ]}
                 />
                 <ProjectCard
                   videoSrc="/images/BubbleEditorUI2.mp4"
@@ -78,31 +75,22 @@ export default function Home() {
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   company="The.com"
-                  title="The.com CMS Sheets"
+                  title="The.com CMS"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
                     "Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.",
                     "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
                   ]}
                 />
-                {/* <ProjectCard
-                  imageSrc="/images/TheDotCom.png"
+                <ProjectCard
+                  imageSrc="/images/TheDotComCSSSheetGroups.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
                     "Placeholder"
                   ]}
-                /> */}
-                {/* <ProjectCard
-                  imageSrc="/images/TheDotCom.png"
-                  imageAlt="QA Wolf Web App"
-                  title="QA Wolf Web App"
-                  logoSrc="/images/LogoQAWolf.svg"
-                  paragraphs={[
-                    "Placeholder"
-                  ]}
-                /> */}
+                />
                 <ProjectCard
                   videoSrc="/images/InVisionInspectMotion.mp4"
                   imageSrc="/images/InVisionInspectMotion.png"
