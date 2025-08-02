@@ -41,7 +41,6 @@ export default function Home() {
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
                   imageAlt="Bubble Native Mobile Apps"
-                  company="Bubble"
                   title="Bubble Native Mobile Apps"
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
@@ -53,7 +52,6 @@ export default function Home() {
                   videoSrc="/images/BubbleEditorUI2.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
-                  company="Bubble"
                   title="Bubble Editor UI"
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
@@ -74,7 +72,6 @@ export default function Home() {
                   videoSrc="/images/TheDotComCMS.mp4"
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
-                  company="The.com"
                   title="The.com CMS"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
@@ -83,6 +80,7 @@ export default function Home() {
                   ]}
                 />
                 <ProjectCard
+                  videoSrc="/images/TheDotComCSSSheetGroups.mp4"
                   imageSrc="/images/TheDotComCSSSheetGroups.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
@@ -95,7 +93,6 @@ export default function Home() {
                   videoSrc="/images/InVisionInspectMotion.mp4"
                   imageSrc="/images/InVisionInspectMotion.png"
                   imageAlt="InVision Inspect Motion"
-                  company="InVision"
                   title="InVision Inspect Motion"
                   logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
@@ -106,7 +103,6 @@ export default function Home() {
                   videoSrc="/images/InVisionStudioJiraIntegration.mp4"
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
                   imageAlt="InVision Studio Jira Integration"
-                  company="InVision"
                   title="InVision Studio Jira Integration"
                   logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
