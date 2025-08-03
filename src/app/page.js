@@ -4,12 +4,18 @@ import { GeistMono } from 'geist/font/mono';
 import { ModeToggle } from '../components/mode-toggle'
 import Image from 'next/image';
 import Avatar from '../../public/images/avatar.png'
+import LogoToolshed from '../../public/images/LogoToolshed.svg'
+import LogoBubble from '../../public/images/LogoBubble.svg'
+import LogoTheDotCom from '../../public/images/LogoTheDotCom.svg'
+import LogoQAWolf from '../../public/images/LogoQAWolf.svg'
+import LogoInvision from '../../public/images/LogoInvision.svg'
+import LogoIBM from '../../public/images/LogoIBM.svg'
 import ProjectCard from '../components/project-card'
 
 export default function Home() {
   return (
-    <div className="pb-18">
-      <main className="flex flex-col">
+    <div className="">
+      <main className="flex flex-col pb-14 lg:pb-20">
         <header className="sticky top-0 py-4 px-4 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
           <div className="flex items-center justify-between w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
             <div className="flex items-center gap-3">
@@ -109,6 +115,115 @@ export default function Home() {
                     "Placeholder"
                   ]}
                 />
+              </div>
+            </section>
+            <section className="flex flex-col gap-6 lg:gap-7">
+              <div className={GeistMono.className}>
+                <h2 className="text-sm font-medium tracking-wider uppercase">Work Experience</h2>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-4 py-4 border-t dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoToolshed}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">Toolshed</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Independent</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2025—&nbsp;&nbsp;</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 py-4 border-t dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoBubble}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">Bubble</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Lead Product Designer</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2023—24</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 py-4 border-t dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoTheDotCom}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">The.com</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Staff Product Designer</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2022—23</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 py-4 border-t dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoQAWolf}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">QA Wolf</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Founding Designer</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2020—21</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 py-4 border-t dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoInvision}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">InVision</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Senior Product Designer</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2018—20</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 py-4 border-t border-b dark:border-border lg:py-6">
+                  <div className="flex gap-3 items-center flex-grow">
+                    <Image
+                      src={LogoIBM}
+                      alt="Avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full w-7 lg:w-8"
+                      unoptimized
+                    />
+                    <span className="text-base lg:text-lg">IBM</span>
+                  </div>
+                  <span className="text-base lg:text-lg">Product Designer</span>
+                  <div className={GeistMono.className}>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2014—18</span>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
