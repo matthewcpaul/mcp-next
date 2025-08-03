@@ -69,7 +69,7 @@ export default function Home() {
                   logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
                     "Designed the new UI for the Bubble editor, which is used by over 5M developers to build their apps.",
-                    "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I worked with multiple designers and engineering teams to help with implementation and cohesion."
+                    "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I collaborated with multiple designers and engineering teams to facilitate implementation and ensure cohesion."
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
@@ -154,7 +154,7 @@ export default function Home() {
                     <div className={GeistMono.className}>
                       <p className="mb-3 text-base text-[var(--text-secondary)] lg:text-[17px]">Product Designer &#183; Bubble</p>
                     </div>
-                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is one of the best designers I’ve ever worked with. He is next level when it comes to design systems, interaction design, and pixel perfect components. He clearly cares deeply about his craft and transformed Bubble’s design quality threshold by shipping thoughtful designs and advocating across stakeholders. I really enjoyed my time working with him!</p>
+                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is one of the best designers I’ve ever worked with. He is next level when it comes to design systems, interaction design, and pixel-perfect components. He clearly cares deeply about his craft and transformed Bubble’s design quality threshold by shipping thoughtful designs and advocating across stakeholders. I really enjoyed my time working with him!</p>
                   </div>
                 </div>
 
@@ -172,7 +172,7 @@ export default function Home() {
                     <div className={GeistMono.className}>
                       <p className="mb-3 text-base text-[var(--text-secondary)] lg:text-[17px]">Product Manager &#183; Bubble</p>
                     </div>
-                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew and I worked together as founding members of Bubble’s Mobile team. I was really impressed with how quickly he was able to ramp up on Bubble’s product and bring his domain expertise of mobile development and design patterns to craft the vision for the mobile apps editor. He was a strong collaborator with engineering, working closely from project kickoff through design QA to ensure successful releases. I can say with confidence that the mobile product offering would not be where it’s at today without his design leadership.</p>
+                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew and I worked together as founding members of Bubble’s Mobile team. I was really impressed with how quickly he was able to ramp up on Bubble’s product and bring his domain expertise of mobile development and design patterns to craft the vision for the mobile apps editor. He was a strong collaborator with engineering, working closely from project kickoff through design QA to ensure successful releases. I can say with confidence that the mobile product offering would not be where it is today without his design leadership.</p>
                   </div>
                 </div>
 
@@ -208,7 +208,7 @@ export default function Home() {
                     <div className={GeistMono.className}>
                       <p className="mb-3 text-base text-[var(--text-secondary)] lg:text-[17px]">CEO &#183; Liveblocks</p>
                     </div>
-                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">I worked closely with Matthew for a good portion of his time at InVision, and we also worked together on a project for a couple of months. In that time, I’ve seen him contribute to the InVision design system like no others. He also has a good understanding of the technical side of things, which really pays off when it comes to executing an idea with engineers. Matthew is also a good listener, and genuinely cares about improving his skills. It’s rare to find someone willing to use feedback to drive real change and personal growth.</p>
+                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">I worked closely with Matthew for a good portion of his time at InVision, and we also worked together on a project for a couple of months. In that time, I’ve seen him contribute to the InVision design system like no other. He also has a good understanding of the technical side of things, which really pays off when it comes to executing an idea with engineers. Matthew is also a good listener and genuinely cares about improving his skills. It’s rare to find someone willing to use feedback to drive real change and personal growth.</p>
                   </div>
                 </div>
 
