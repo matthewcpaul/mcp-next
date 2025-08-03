@@ -126,7 +126,7 @@ export default function Home() {
                   logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
                     "I led a design sprint with InVision and Atlassian to ideate on how our products could work together.",
-                    "This feature I designed brought Jira orgs, sprints, filters, and issues directly into the workflow in InVision Studio, allowing designers to sync screens and prtotypes without leaving their design tool."
+                    "This feature I designed brought Jira orgs, sprints, filters, and issues directly into the workflow in InVision Studio, allowing designers to sync screens and prototypes without leaving their design tool."
                   ]}
                 />
               </div>
