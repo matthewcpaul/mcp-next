@@ -15,6 +15,8 @@ import LogoQAWolf from '../../public/images/LogoQAWolf.svg'
 import LogoInvision from '../../public/images/LogoInvision.svg'
 import LogoIBM from '../../public/images/LogoIBM.svg'
 import ProjectCard from '../components/project-card'
+import { FileText } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
   return (
@@ -326,6 +328,14 @@ export default function Home() {
         <span className="text-sm font-medium">
           Made in Colorado &nbsp;&#183;&nbsp; Published {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
         </span>
+        <Button
+          variant="outline"
+          size="default"
+          onClick={() => window.open('/resume/MatthewPaul_Resume_2025.pdf', '_blank')}
+          aria-label="Open resume PDF"
+        >
+          <FileText className="h-[1.2rem] w-[1.2rem]" /> Resume
+        </Button>
       </footer>
     </div>
   );
