@@ -73,15 +73,6 @@ export default function Home() {
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
-                {/* <ProjectCard
-                  imageSrc="/images/TheDotCom.png"
-                  imageAlt="Bubble Pop Design System"
-                  title="Bubble Pop Design System"
-                  logoSrc="/images/LogoBubble.svg"
-                  paragraphs={[
-                    "Placeholder"
-                  ]}
-                /> */}
                 <ProjectCard
                   videoSrc="/images/TheDotComCMS.mp4"
                   imageSrc="/images/TheDotComCMS.png"
