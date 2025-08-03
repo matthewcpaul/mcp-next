@@ -322,7 +322,10 @@ export default function Home() {
           </div>
         </article>
       </main>
-      <footer className="flex gap-6 flex-wrap items-center justify-center">
+      <footer className="flex items-center justify-between py-4 w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
+        <span className="text-sm font-medium">
+          Made in Colorado &nbsp;&#183;&nbsp; Published {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
+        </span>
       </footer>
     </div>
   );
