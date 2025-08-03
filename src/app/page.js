@@ -101,9 +101,11 @@ export default function Home() {
                   title="The.com CSS Sheet Groups"
                   logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
-                    "Placeholder"
+                    "Designed a more user-friendly way to style pages that introduced concepts from common CSS groupings and spreadsheet column groups.",
+                    "This addition to the existing CSS sheet editing eliminated the never-ending scrolling of columns. The feature resulted in improved user education and quicker style edits."
                   ]}
-                /><div className="border-t mb-2 lg:mb-3"></div>
+                />
+                <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/InVisionInspectMotion.mp4"
                   imageSrc="/images/InVisionInspectMotion.png"
@@ -111,9 +113,11 @@ export default function Home() {
                   title="InVision Inspect Motion"
                   logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
-                    "Placeholder"
+                    "Led product design of a new 0 → 1 designer/developer collaboration tool that had never existed before.",
+                    "Inspect Motion allows developers to find every detail—start and end values, duration, delay, and easing curves—for any animating property on any element from a prototype."
                   ]}
-                /><div className="border-t mb-2 lg:mb-3"></div>
+                />
+                <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/InVisionStudioJiraIntegration.mp4"
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
@@ -121,7 +125,8 @@ export default function Home() {
                   title="InVision Studio Jira Integration"
                   logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
-                    "Placeholder"
+                    "I led a design sprint with InVision and Atlassian to ideate on how our products could work together.",
+                    "This feature I designed brought Jira orgs, sprints, filters, and issues directly into the workflow in InVision Studio, allowing designers to sync screens and prtotypes without leaving their design tool."
                   ]}
                 />
               </div>
@@ -167,7 +172,7 @@ export default function Home() {
                     <div className={GeistMono.className}>
                       <p className="mb-3 text-base text-[var(--text-secondary)] lg:text-[17px]">Product Manager &#183; Bubble</p>
                     </div>
-                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew and I worked together as founding members of Bubble’s Mobile team. I was really impressed with how quickly he was able to ramp up on Bubble’s product and bring his domain expertise of mobile development and design patterns to craft the vision for the mobile apps editor. He was a strong collaborator with engineering as well, working closely from project kickoff through design QA to ensure successful releases. I can say with confidence that the mobile product offering would not be where it’s at today without his design leadership.</p>
+                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew and I worked together as founding members of Bubble’s Mobile team. I was really impressed with how quickly he was able to ramp up on Bubble’s product and bring his domain expertise of mobile development and design patterns to craft the vision for the mobile apps editor. He was a strong collaborator with engineering, working closely from project kickoff through design QA to ensure successful releases. I can say with confidence that the mobile product offering would not be where it’s at today without his design leadership.</p>
                   </div>
                 </div>
 
@@ -185,7 +190,7 @@ export default function Home() {
                     <div className={GeistMono.className}>
                       <p className="mb-3 text-base text-[var(--text-secondary)] lg:text-[17px]">Engineering Manager &#183; Vercel</p>
                     </div>
-                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is a very passionate product designer. As an engineer working with Matthew, it was refreshing to see the amount of care and thought he put into his designs. He genuinely cares about and understands users of the products he builds, and his closeness to developer communities resulted in product designs & features that added value and were well-received within the frontend communities.</p>
+                    <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is a very passionate product designer. As an engineer working with Matthew, it was refreshing to see the amount of care and thought he put into his designs. He genuinely cares about and understands users of the products he builds, and his closeness to developer communities resulted in product designs and features that added value and were well-received within the frontend communities.</p>
                   </div>
                 </div>
 
@@ -231,7 +236,7 @@ export default function Home() {
                   </div>
                   <span className="text-base lg:text-lg">Independent</span>
                   <div className={GeistMono.className}>
-                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2025—&nbsp;&nbsp;</span>
+                    <span className="text-base text-[var(--text-secondary)] lg:text-[17px]">2024—&nbsp;&nbsp;</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
@@ -324,18 +329,20 @@ export default function Home() {
           </div>
         </article>
       </main>
-      <footer className="flex items-center justify-between pt-4 pb-8 w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
-        <span className="text-sm font-medium">
-          Made in Colorado &nbsp;&#183;&nbsp; Published {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
-        </span>
-        <Button
-          variant="outline"
-          size="default"
-          onClick={() => window.open('/resume/MatthewPaul_Resume_2025.pdf', '_blank')}
-          aria-label="Open resume PDF"
-        >
-          <FileText className="h-[1.2rem] w-[1.2rem]" /> Resume
-        </Button>
+      <footer className="px-4 pt-4 pb-8">
+        <div className="flex items-center justify-between w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
+          <span className="text-sm font-medium">
+            Published {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
+          </span>
+          <Button
+            variant="outline"
+            size="default"
+            onClick={() => window.open('/resume/MatthewPaul_Resume_2025.pdf', '_blank')}
+            aria-label="Open resume PDF"
+          >
+            <FileText className="h-[1.2rem] w-[1.2rem]" /> Resume
+          </Button>
+          </div>
       </footer>
     </div>
   );
