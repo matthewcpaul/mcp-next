@@ -32,8 +32,8 @@ export default function Home() {
             <ModeToggle />
           </div>
         </header>
-        <article className="flex flex-col px-4 mt-24 lg:mt-28">
-          <div className="flex flex-col gap-14 max-w-[64rem] mx-auto lg:gap-20 xl:max-w-[70rem]">
+        <article className="flex flex-col px-4 mt-24 lg:mt-36">
+          <div className="flex flex-col gap-20 max-w-[64rem] mx-auto lg:gap-24 xl:max-w-[70rem]">
             <section className="flex flex-col gap-3 max-w-[24rem] sm:max-w-[28rem] lg:gap-4 lg:max-w-[32rem]">
               <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software<br />product designer</h1>
               <p className="text-base text-[var(--text-secondary)] lg:text-lg">10+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems. Specializing in designer, developer, and collaboration tools.</p>
@@ -42,7 +42,7 @@ export default function Home() {
               <div className={GeistMono.className}>
                 <h2 className="text-sm font-medium tracking-wider uppercase">Selected Work</h2>
               </div>
-              <div className="flex flex-col gap-16 lg:gap-24">
+              <div className="flex flex-col gap-8 lg:gap-12">
                 <ProjectCard
                   videoSrc="/images/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
@@ -54,6 +54,7 @@ export default function Home() {
                     "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
                   ]}
                 />
+                <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/BubbleEditorUI2.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
@@ -65,6 +66,7 @@ export default function Home() {
                     "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I worked with multiple designers and engineering teams to help with implementation and cohesion."
                   ]}
                 />
+                <div className="border-t mb-2 lg:mb-3"></div>
                 {/* <ProjectCard
                   imageSrc="/images/TheDotCom.png"
                   imageAlt="Bubble Pop Design System"
@@ -85,6 +87,7 @@ export default function Home() {
                     "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
                   ]}
                 />
+                <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/TheDotComCSSSheetGroups.mp4"
                   imageSrc="/images/TheDotComCSSSheetGroups.png"
@@ -94,7 +97,7 @@ export default function Home() {
                   paragraphs={[
                     "Placeholder"
                   ]}
-                />
+                /><div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/InVisionInspectMotion.mp4"
                   imageSrc="/images/InVisionInspectMotion.png"
@@ -104,7 +107,7 @@ export default function Home() {
                   paragraphs={[
                     "Placeholder"
                   ]}
-                />
+                /><div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
                   videoSrc="/images/InVisionStudioJiraIntegration.mp4"
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
