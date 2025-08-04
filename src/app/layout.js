@@ -15,7 +15,7 @@ export const metadata = {
     siteName: 'Matthew Paul',
     images: [
       {
-        url: 'https://matthewcpaul.com/og/social-image.jpg', // Must be an absolute URL
+        url: 'https://matthewcpaul.com/og/social-image.jpg',
         width: 1200,
         height: 630,
       },
