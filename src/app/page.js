@@ -1,20 +1,14 @@
 "use client"
 
 import { GeistMono } from 'geist/font/mono';
-import { ModeToggle } from '../components/mode-toggle'
 import Image from 'next/image';
 import Avatar from '../../public/images/avatar.png'
 import TestimonialChristine from '../../public/images/TestimonialChristine.jpeg'
 import TestimonialNick from '../../public/images/TestimonialNick.jpeg'
 import TestimonialSteven from '../../public/images/TestimonialSteven.jpeg'
 import TestimonialZack from '../../public/images/TestimonialZack.jpeg'
-import LogoToolshed from '../../public/images/LogoToolshed.svg'
-import LogoBubble from '../../public/images/LogoBubble.svg'
-import LogoTheDotCom from '../../public/images/LogoTheDotCom.svg'
-import LogoQAWolf from '../../public/images/LogoQAWolf.svg'
-import LogoInvision from '../../public/images/LogoInvision.svg'
-import LogoIBM from '../../public/images/LogoIBM.svg'
 import ProjectCard from '../components/project-card'
+import { ModeToggle } from '../components/mode-toggle'
 import { FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -54,7 +48,6 @@ export default function Home() {
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
                   imageAlt="Bubble Native Mobile Apps"
                   title="Bubble Native Mobile Apps"
-                  logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
                     "Drove the product direction and design for the launch of the largest product expansion in Bubble’s history.",
                     "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
@@ -66,7 +59,6 @@ export default function Home() {
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
-                  logoSrc="/images/LogoBubble.svg"
                   paragraphs={[
                     "Designed the new UI for the Bubble editor, which is used by over 5M developers to build their apps.",
                     "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I collaborated with multiple designers and engineering teams to facilitate implementation and ensure cohesion."
@@ -78,7 +70,6 @@ export default function Home() {
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   title="The.com CMS"
-                  logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
                     "Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.",
                     "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
@@ -90,7 +81,6 @@ export default function Home() {
                   imageSrc="/images/TheDotComCSSSheetGroups.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
-                  logoSrc="/images/LogoTheDotCom.svg"
                   paragraphs={[
                     "Designed a more user-friendly way to style pages that introduced concepts from common CSS groupings and spreadsheet column groups.",
                     "This addition to the existing CSS sheet editing eliminated the never-ending scrolling of columns. The feature resulted in improved user education and quicker style edits."
@@ -102,7 +92,6 @@ export default function Home() {
                   imageSrc="/images/InVisionInspectMotion.png"
                   imageAlt="InVision Inspect Motion"
                   title="InVision Inspect Motion"
-                  logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
                     "Led product design of a new 0 → 1 designer/developer collaboration tool that had never existed before.",
                     "Inspect Motion allows developers to find every detail—start and end values, duration, delay, and easing curves—for any animating property on any element from a prototype."
@@ -114,7 +103,6 @@ export default function Home() {
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
                   imageAlt="InVision Studio Jira Integration"
                   title="InVision Studio Jira Integration"
-                  logoSrc="/images/LogoInvision.svg"
                   paragraphs={[
                     "I led a design sprint with InVision and Atlassian to ideate on how our products could work together.",
                     "This feature I designed brought Jira orgs, sprints, filters, and issues directly into the workflow in InVision Studio, allowing designers to sync screens and prototypes without leaving their design tool."
@@ -126,11 +114,7 @@ export default function Home() {
               <div className={GeistMono.className}>
                 <h2 className="text-sm font-medium tracking-wider uppercase">Testimonials</h2>
               </div>
-
-
               <div className="grid lg:grid-cols-2 lg:gap-x-20">
-
-
                 <div className="flex gap-3 items-start border-t pt-4 pb-6 lg:pt-6 lg:pb-8">
                   <Image
                     src={TestimonialChristine}
@@ -148,7 +132,6 @@ export default function Home() {
                     <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is one of the best designers I’ve ever worked with. He is next level when it comes to design systems, interaction design, and pixel-perfect components. He clearly cares deeply about his craft and transformed Bubble’s design quality threshold by shipping thoughtful designs and advocating across stakeholders. I really enjoyed my time working with him!</p>
                   </div>
                 </div>
-
                 <div className="flex gap-3 items-start border-t pt-4 pb-6 lg:pt-6 lg:pb-8">
                   <Image
                     src={TestimonialNick}
@@ -166,7 +149,6 @@ export default function Home() {
                     <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew and I worked together as founding members of Bubble’s Mobile team. I was really impressed with how quickly he was able to ramp up on Bubble’s product and bring his domain expertise of mobile development and design patterns to craft the vision for the mobile apps editor. He was a strong collaborator with engineering, working closely from project kickoff through design QA to ensure successful releases. I can say with confidence that the mobile product offering would not be where it is today without his design leadership.</p>
                   </div>
                 </div>
-
                 <div className="flex gap-3 items-start border-t lg:border-b pt-4 pb-6 lg:pt-6 lg:pb-8">
                   <Image
                     src={TestimonialZack}
@@ -184,7 +166,6 @@ export default function Home() {
                     <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">Matthew is a very passionate product designer. As an engineer working with Matthew, it was refreshing to see the amount of care and thought he put into his designs. He genuinely cares about and understands users of the products he builds, and his closeness to developer communities resulted in product designs and features that added value and were well-received within the frontend communities.</p>
                   </div>
                 </div>
-
                 <div className="flex gap-3 items-start border-t border-b pt-4 pb-6 lg:pt-6 lg:pb-8">
                   <Image
                     src={TestimonialSteven}
@@ -202,11 +183,7 @@ export default function Home() {
                     <p className="text-balance text-base text-[var(--text-secondary)] lg:text-lg">I worked closely with Matthew for a good portion of his time at InVision, and we also worked together on a project for a couple of months. In that time, I’ve seen him contribute to the InVision design system like no other. He also has a good understanding of the technical side of things, which really pays off when it comes to executing an idea with engineers. Matthew is also a good listener and genuinely cares about improving his skills. It’s rare to find someone willing to use feedback to drive real change and personal growth.</p>
                   </div>
                 </div>
-
-
               </div>
-
-
             </section>
             <section className="flex flex-col gap-6 lg:gap-7">
               <div className={GeistMono.className}>
@@ -216,8 +193,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoToolshed}
-                      alt="Avatar"
+                      src="/images/LogoToolshed.svg"
+                      alt="Toolshed Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
@@ -233,8 +210,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoBubble}
-                      alt="Avatar"
+                      src="/images/LogoBubble.svg"
+                      alt="Bubble Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
@@ -250,8 +227,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoTheDotCom}
-                      alt="Avatar"
+                      src="/images/LogoTheDotCom.svg"
+                      alt="The.com Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
@@ -267,8 +244,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoQAWolf}
-                      alt="Avatar"
+                      src="/images/LogoQAWolf.svg"
+                      alt="QA Wolf Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
@@ -284,8 +261,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoInvision}
-                      alt="Avatar"
+                      src="/images/LogoInvision.svg"
+                      alt="InVision Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
@@ -301,8 +278,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 py-4 border-t border-b lg:py-6">
                   <div className="flex gap-3 items-center flex-grow">
                     <Image
-                      src={LogoIBM}
-                      alt="Avatar"
+                      src="/images/LogoIBM.svg"
+                      alt="IBM Logo"
                       width={32}
                       height={32}
                       className="rounded-full w-7 lg:w-8"
