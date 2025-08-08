@@ -50,7 +50,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-8 lg:gap-12">
                 <ProjectCard
-                  videoSrc="/images/BubbleNativeMobileTabBar.mp4"
+                  videoSrc="/videos/compressed/BubbleNativeMobileTabBar.mp4"
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
                   imageAlt="Bubble Native Mobile Apps"
                   title="Bubble Native Mobile Apps"
@@ -62,7 +62,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/BubbleEditorUI.mp4"
+                  videoSrc="/videos/compressed/BubbleEditorUI.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
@@ -74,7 +74,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/TheDotComCMS.mp4"
+                  videoSrc="/videos/compressed/TheDotComCMS.mp4"
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   title="The.com CMS"
@@ -86,7 +86,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/TheDotComCSSSheetGroups.mp4"
+                  videoSrc="/videos/compressed/TheDotComCSSSheetGroups.mp4"
                   imageSrc="/images/TheDotComCSSSheetGroups.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
@@ -98,7 +98,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/InVisionInspectMotion.mp4"
+                  videoSrc="/videos/compressed/InVisionInspectMotion.mp4"
                   imageSrc="/images/InVisionInspectMotion.png"
                   imageAlt="InVision Inspect Motion"
                   title="InVision Inspect Motion"
@@ -110,7 +110,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/InVisionStudioJiraIntegration.mp4"
+                  videoSrc="/videos/compressed/InVisionStudioJiraIntegration.mp4"
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
                   imageAlt="InVision Studio Jira Integration"
                   title="InVision Studio Jira Integration"
