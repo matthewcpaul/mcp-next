@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex flex-col gap-20 max-w-[64rem] mx-auto lg:gap-24 xl:max-w-[70rem]">
             <section className="flex flex-col gap-3 max-w-[24rem] sm:max-w-[28rem] lg:gap-4 lg:max-w-[32rem]">
               <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software<br />product designer</h1>
-              <p className="text-base text-[var(--text-secondary)] lg:text-lg">10+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems. Specializing in designer, developer, and collaboration tools.</p>
+              <p className="text-base text-[var(--text-secondary)] lg:text-lg">10+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems in code. Specializing in designer, developer, and collaboration tools.</p>
             </section>
             <section className="flex flex-col gap-6 lg:gap-7">
               <div className={GeistMono.className}>
@@ -57,22 +57,22 @@ export default function Home() {
                 <ProjectCard
                   videoSrc="/videos/compressed/BubbleEditorUI.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
-                  imageAlt="Bubble Editor UI"
-                  title="Bubble Editor UI"
+                  imageAlt="Bubble Editor UI 2"
+                  title="Bubble Editor UI 2"
                   paragraphs={[
-                    "Designed the new UI for the Bubble editor, which is used by over 5M developers to build their apps.",
-                    "I led the design for the toolbar, tab bar, elements tree, property editor, and dark mode. I collaborated with multiple designers and engineering teams to facilitate implementation and ensure cohesion."
+                    "Designed the new UI for the Bubble editor, focusing on a new information architecture and visual refresh.",
+                    "I led the redesign for the toolbar, tab bar, elements tree, property editor, app switcher, popovers, and menus. I collaborated with multiple designers and engineering teams to facilitate implementation and ensure cohesion."
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/videos/compressed/TheDotComCMS.mp4"
+                  videoSrc="/videos/compressed/TheDotComCMS2.mp4"
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   title="The.com CMS"
                   paragraphs={[
                     "Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.",
-                    "I learned from early customers through generative and evaluative research, iterated and improved on the core product, and designed a brand new product surface area for editing page content."
+                    "I designed and prototyped a new side-by-side view for editing page content and easily generating new pages from a template. Every row is a new page, and each column connects to content, styles, or custom properties.",
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
@@ -83,7 +83,7 @@ export default function Home() {
                   title="The.com CSS Sheet Groups"
                   paragraphs={[
                     "Designed a more user-friendly way to style pages that introduced concepts from common CSS groupings and spreadsheet column groups.",
-                    "This addition to the existing CSS sheet editing eliminated the never-ending scrolling of columns. The feature resulted in improved user education and quicker style edits."
+                    "This redesign of the existing CSS sheet editing eliminated the never-ending scrolling of columns, resulted in improved user education and enabled easier style edits."
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
@@ -93,8 +93,8 @@ export default function Home() {
                   imageAlt="InVision Inspect Motion"
                   title="InVision Inspect Motion"
                   paragraphs={[
-                    "Led product design of a new 0 → 1 designer/developer collaboration tool that had never existed before.",
-                    "Inspect Motion allows developers to find every detail—start and end values, duration, delay, and easing curves—for any animating property on any element from a prototype."
+                    "Led product design of a new 0 → 1 designer / developer collaboration tool that had never existed before.",
+                    "Inspect Motion allowed developers to view prototypes in an entirely new way, finding every detail—start / end values, duration, delay, and easing curves—for any animating property on any element."
                   ]}
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
