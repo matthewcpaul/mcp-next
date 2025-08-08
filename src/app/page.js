@@ -62,7 +62,7 @@ export default function Home() {
                 />
                 <div className="border-t mb-2 lg:mb-3"></div>
                 <ProjectCard
-                  videoSrc="/images/BubbleEditorUI2.mp4"
+                  videoSrc="/images/BubbleEditorUI.mp4"
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI"
                   title="Bubble Editor UI"
