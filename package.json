@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "NEXT_PUBLIC_DEPLOY_DATE=$(date '+%b %-d, %Y') next build",
+    "dev": "npm run compress-videos && next dev --turbopack",
+    "build": "npm run compress-videos && NEXT_PUBLIC_DEPLOY_DATE=$(date '+%b %-d, %Y') next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compress-videos": "node scripts/auto-compress-videos.js"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.15",
