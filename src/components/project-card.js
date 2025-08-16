@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
-export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs}) {
+export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, href}) {
   const videoRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -28,7 +29,13 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
   useEffect(() => {
     if (videoRef.current) {
       if (isVisible) {
-        videoRef.current.play();
+        const playPromise = videoRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(error => {
+            // Auto-play was prevented or failed
+            // We can safely ignore this error
+          });
+        }
       } else {
         videoRef.current.pause();
       }
@@ -50,12 +57,12 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
           >
             {imageSrc && <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />}
           </video>
-        ) : imageSrc ? (
-          <img src={imageSrc} alt={imageAlt} className="w-full h-auto" />
         ) : null}
       </div>
       <div className="flex flex-col gap-2 lg:gap-3 max-w-[31rem]">
-        <h3 className="text-base font-semibold tracking-tight lg:text-lg">{title}</h3>
+        <Link href={href}>
+          <h3 className="text-base font-semibold tracking-tight underline underline-offset-2 lg:text-lg">{title}</h3>
+        </Link>
         <div className="flex flex-col gap-2 lg:gap-3">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (

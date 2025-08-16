@@ -1,7 +1,8 @@
 "use client"
 
-import { GeistMono } from 'geist/font/mono';
-import Image from 'next/image';
+import { GeistMono } from 'geist/font/mono'
+import Image from 'next/image'
+import Link from 'next/link'
 import Avatar from '../../public/images/avatar.png'
 import TestimonialChristine from '../../public/images/TestimonialChristine.jpeg'
 import TestimonialNick from '../../public/images/TestimonialNick.jpeg'
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <div className="">
       <main className="flex flex-col pb-14 lg:pb-20">
-        <header className="sticky top-0 py-4 px-4 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
+        <nav className="sticky top-0 py-4 px-4 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/85 z-10">
           <div className="flex items-center justify-between w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
             <div className="flex items-center gap-3">
               <Image
@@ -27,14 +28,16 @@ export default function Home() {
                 className="rounded-full"
                 unoptimized
               />
-              <span className="text-sm font-medium">Matthew Paul</span>
+              <Link href="/">
+                <span className="text-sm font-medium">Matthew Paul</span>
+              </Link>
             </div>
             <ModeToggle />
           </div>
-        </header>
+        </nav>
         <article className="flex flex-col px-4 mt-24 lg:mt-36">
           <div className="flex flex-col gap-20 max-w-[64rem] mx-auto lg:gap-24 xl:max-w-[70rem]">
-            <section className="flex flex-col gap-3 max-w-[24rem] sm:max-w-[28rem] lg:gap-4 lg:max-w-[32rem]">
+            <section className="flex flex-col gap-4 max-w-[24rem] sm:max-w-[28rem] lg:gap-6 lg:max-w-[32rem]">
               <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Software<br />product designer</h1>
               <p className="text-base text-[var(--text-secondary)] lg:text-lg">10+ years of experience designing 0 → 1 products, shipping software at scale, and building design systems in code. Specializing in designer, developer, and collaboration tools.</p>
             </section>
@@ -48,6 +51,7 @@ export default function Home() {
                   imageSrc="/images/BubbleNativeMobileTabBar.png"
                   imageAlt="Bubble Native Mobile Apps"
                   title="Bubble Native Mobile Apps"
+                  href="/project/bubble-native-mobile-apps"
                   paragraphs={[
                     "Drove the product direction and design for the launch of the largest product expansion in Bubble’s history.",
                     "I designed the core concepts for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
@@ -59,6 +63,7 @@ export default function Home() {
                   imageSrc="/images/BubbleEditorUI.png"
                   imageAlt="Bubble Editor UI 2"
                   title="Bubble Editor UI 2"
+                  href="/project/bubble-editor-ui-2"
                   paragraphs={[
                     "Designed the new UI for the Bubble editor, focusing on a new information architecture and visual refresh.",
                     "I led the redesign for the toolbar, tab bar, elements tree, property editor, app switcher, popovers, and menus. I collaborated with multiple designers and engineering teams to facilitate implementation and ensure cohesion."
@@ -70,6 +75,7 @@ export default function Home() {
                   imageSrc="/images/TheDotComCMS.png"
                   imageAlt="The.com CMS"
                   title="The.com CMS"
+                  href="/project/the-dot-com-cms"
                   paragraphs={[
                     "Led product, design, and design systems for The.com’s no-code, sheet-based website builder and CMS tools.",
                     "I designed and prototyped a new side-by-side view for editing page content and easily generating new pages from a template. Every row is a new page, and each column connects to content, styles, or custom properties.",
@@ -81,6 +87,7 @@ export default function Home() {
                   imageSrc="/images/TheDotComCSSSheetGroups.png"
                   imageAlt="The.com CSS Sheet Groups"
                   title="The.com CSS Sheet Groups"
+                  href="/project/the-dot-com-css-sheet-groups"
                   paragraphs={[
                     "Designed a more user-friendly way to style pages that introduced concepts from common CSS groupings and spreadsheet column groups.",
                     "This redesign of the existing CSS sheet editing eliminated the never-ending scrolling of columns, resulted in improved user education and enabled easier style edits."
@@ -92,6 +99,7 @@ export default function Home() {
                   imageSrc="/images/InVisionInspectMotion.png"
                   imageAlt="InVision Inspect Motion"
                   title="InVision Inspect Motion"
+                  href="/project/invision-inspect-motion"
                   paragraphs={[
                     "Led product design of a new 0 → 1 designer / developer collaboration tool that had never existed before.",
                     "Inspect Motion allowed developers to view prototypes in an entirely new way, finding every detail—start / end values, duration, delay, and easing curves—for any animating property on any element."
@@ -103,6 +111,7 @@ export default function Home() {
                   imageSrc="/images/InVisionStudioJiraIntegration.png"
                   imageAlt="InVision Studio Jira Integration"
                   title="InVision Studio Jira Integration"
+                  href="/project/invision-studio-jira-integration"
                   paragraphs={[
                     "I led a design sprint with InVision and Atlassian to ideate on how our products could work together.",
                     "This feature I designed brought Jira orgs, sprints, filters, and issues directly into the workflow in InVision Studio, allowing designers to sync screens and prototypes without leaving their design tool."
@@ -300,7 +309,7 @@ export default function Home() {
       <footer className="px-4 pt-4 pb-8">
         <div className="flex items-center justify-between w-full max-w-[64rem] mx-auto xl:max-w-[70rem]">
           <span className="text-sm font-medium">
-            Published {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
+            Deployed {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
           </span>
           <Button
             variant="outline"
