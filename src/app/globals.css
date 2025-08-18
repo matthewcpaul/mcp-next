@@ -10,6 +10,8 @@
   --color-neutral-300: #8C8C8C;
   --text-base: 1rem;
   --text-base--line-height: 1.5rem;
+  --text-md: 1.5rem;
+  --text-md--line-height: 2rem;
   --text-lg: 1.125rem;
   --text-lg--line-height: 1.75rem;
   --text-xl: 1.75rem;
@@ -22,7 +24,7 @@
 }
 
 :root {
-  --text-secondary: var(--color-neutral-600);
+  --text-secondary: var(--color-neutral-500);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

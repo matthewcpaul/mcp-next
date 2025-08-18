@@ -36,8 +36,13 @@ export default function Home() {
         </nav>
         <article className="flex flex-col px-4 mt-24 lg:mt-32">
           <div className="flex flex-col gap-8 max-w-[64rem] mx-auto lg:gap-12 xl:max-w-[70rem]">
-            <section className="flex flex-col">
-              <h1 className="mb-7 lg:mb-10 text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Bubble Native Mobile Apps</h1>
+            <section className="flex flex-col gap-7 lg:gap-10">
+              <h1 className="text-2xl-small font-semibold tracking-tight text-balance lg:text-2xl">Bubble Native Mobile Apps</h1>
+              <LazyVideo
+                src="/videos/compressed/BubbleNativeMobileTabBar.mp4"
+                className="mb-3 lg:mb-5"
+              />
+              <div className="flex flex-col">
               <div className="border-t"></div>
               <div className="grid grid-cols-1 gap-8 py-5 lg:py-7 lg:grid-cols-2 lg:gap-24">
                 <div className="flex flex-col">
@@ -74,6 +79,7 @@ export default function Home() {
                       <p className="text-base text-[var(--text-secondary)] lg:text-lg">Product Strategy</p>
                       <p className="text-base text-[var(--text-secondary)] lg:text-lg">Design Vision</p>
                       <p className="text-base text-[var(--text-secondary)] lg:text-lg">UI & Interaction Design</p>
+                      <p className="text-base text-[var(--text-secondary)] lg:text-lg">Prototyping</p>
                       <p className="text-base text-[var(--text-secondary)] lg:text-lg">UX Research</p>
                     </div>
                   </div>
@@ -90,19 +96,23 @@ export default function Home() {
                 </div>
               </div>
               <div className="border-t"></div>
+              </div>
             </section>
             <section className="flex flex-col gap-8 lg:gap-12">
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Congifure Bottom Tab Bar</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Congifure bottom Tab Bar</h2>
                 <div className="flex flex-col gap-5 lg:gap-6">
                   <div className="flex flex-col gap-2 lg:gap-2">
-                    <LazyVideo
-                      src="/videos/compressed/BubbleNativeMobileTabBar.mp4"
+                    <Image
+                    src="/images/BubbleTabItemWorkflowSelect.png"
+                    alt="Bubble Native Mobile Tab Item Workflow Select"
+                    width={6128}
+                    height={3968}
                     />
                     <div className={GeistMono.className}>
-                      <p className="text-[0.6875rem] font-medium leading-4 tracking-wider uppercase text-[var(--text-secondary)] lg:text-sm lg:leading-7">
-                        Creating a new Tab Item, selecting default and active icons, and selecting linked view
+                      <p className="text-[0.6875rem] lg:text-sm font-medium leading-7 tracking-wider uppercase text-[var(--text-secondary)]">
+                        Selecting a workflow to be triggered by a Tab Item
                       </p>
                     </div>
                   </div>
@@ -119,50 +129,37 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-2 lg:gap-2">
-                    <Image
-                    src="/images/BubbleTabItemWorkflowSelect.png"
-                    alt="Bubble Native Mobile Tab Item Workflow Select"
-                    width={6128}
-                    height={3968}
-                    />
-                    <div className={GeistMono.className}>
-                      <p className="text-[0.6875rem] lg:text-sm font-medium leading-7 tracking-wider uppercase text-[var(--text-secondary)]">
-                        Selecting a workflow to be triggered by this Tab Item
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Congifure Top App Bar</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Congifure top App Bar</h2>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Implement native Sheets</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Implement native Sheets</h2>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Build Swipe Actions</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Build Swipe Actions</h2>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Web preview</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Web preview</h2>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">Native app preview</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">Native app preview</h2>
               </div>
               <div className="border-t"></div>
 
               <div className="flex flex-col gap-5 lg:gap-6">
-                <h2 className="text-lg lg:text-xl font-semibold tracking-tight">App store publish flow</h2>
+                <h2 className="text-md lg:text-xl font-semibold tracking-tight">App store publish flow</h2>
               </div>
               <div className="border-t"></div>
 
