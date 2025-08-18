@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
-export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, href}) {
+export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, paragraphs, href, linkless = false }) {
   const videoRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -60,9 +60,13 @@ export default function ProjectCard({ videoSrc, imageSrc, imageAlt, title, parag
         ) : null}
       </div>
       <div className="flex flex-col gap-2 lg:gap-3 max-w-[31rem]">
-        <Link href={href}>
-          <h3 className="text-base font-semibold tracking-tight underline underline-offset-2 lg:text-lg">{title}</h3>
-        </Link>
+        {linkless ? (
+          <h3 className="text-base font-semibold tracking-tight lg:text-lg">{title}</h3>
+        ) : (
+          <Link href={href}>
+            <h3 className="text-base font-semibold tracking-tight underline underline-offset-2 lg:text-lg">{title}</h3>
+          </Link>
+        )}
         <div className="flex flex-col gap-2 lg:gap-3">
           {Array.isArray(paragraphs) ? (
             paragraphs.map((paragraph, index) => (
