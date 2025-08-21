@@ -55,6 +55,7 @@ export default function Home() {
                   imageAlt="Bubble Native Mobile Apps"
                   title="Bubble Native Mobile Apps"
                   href="/project/bubble-native-mobile-apps"
+                  linkless={true}
                   paragraphs={[
                     "Drove the product direction, design, and UX research for a new 0 → 1 product—the largest product expansion in Bubble’s history.",
                     "I designed the core concepts, interactions, and UI for how to design, build, preview, and publish native mobile apps for iOS and Android in a redesigned no-code editor."
