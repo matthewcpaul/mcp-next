@@ -109,8 +109,7 @@ export function StickyHeader() {
   // Focus management: move focus into overlay on open, restore on close
   useEffect(() => {
     if (menuOpen && !isClosing && overlayRef.current) {
-      const firstLink = overlayRef.current.querySelector('a, button')
-      if (firstLink) firstLink.focus()
+      overlayRef.current.focus()
     }
     if (!menuOpen && hasBeenToggled && hamburgerRef.current) {
       hamburgerRef.current.focus()
@@ -200,7 +199,8 @@ export function StickyHeader() {
           ref={overlayRef}
           role="dialog"
           aria-modal="true"
-          className="fixed inset-x-0 bottom-0 md:hidden flex flex-col px-4 py-4 bg-background/90 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70 dark:supports-[backdrop-filter]:bg-background/90 z-10"
+          tabIndex={-1}
+          className="fixed inset-x-0 bottom-0 md:hidden flex flex-col px-4 py-4 bg-background/90 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70 dark:supports-[backdrop-filter]:bg-background/90 z-10 outline-none"
           style={{
             top: '64px',
             animation: isClosing
