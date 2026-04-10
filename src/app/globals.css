@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --breakpoint-xs: 25rem;
   --breakpoint-md: 40rem;
   --breakpoint-lg: 60rem;
   --text-base: 1rem;
@@ -12,6 +13,8 @@
   --text-md--line-height: 1.625rem;
   --text-lg: 2.5rem;
   --text-lg--line-height: 2.75rem;
+  --text-lg-2: 2.75rem;
+  --text-lg-2--line-height: 3rem;
   --text-xl: 3.5rem;
   --text-xl--line-height: 3.625rem;
   --text-xxl: 4rem;

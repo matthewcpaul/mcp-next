@@ -18,8 +18,8 @@ export default function Home() {
         <StickyHeader />
         <article className="flex flex-col gap-16 md:gap-28 mt-48 md:mt-56 px-4 lg:px-8">
           <div className="flex flex-col">
-            <h1 className="text-lg md:text-xl lg:text-xxl font-medium tracking-tighter">Matthew Paul</h1>
-            <p className="text-lg md:text-xl lg:text-xxl font-medium tracking-tighter text-[var(--text-tertiary)]">Software Designer</p>
+            <h1 className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">Matthew Paul</h1>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter text-[var(--text-tertiary)]">Software Designer</p>
           </div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 gap-y-8 md:gap-y-10 lg:gap-y-16">
             <ProjectCard
