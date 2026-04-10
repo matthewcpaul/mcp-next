@@ -1,12 +1,14 @@
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-const inter = Inter({
-  subsets: ['latin'],
+const InterVariable = localFont({
+  src: '../../public/fonts/InterVariable.woff2',
   variable: '--font-inter',
+  weight: '100 900',
+  display: 'swap',
 })
 
 export const metadata = {
@@ -33,7 +35,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={InterVariable.className} suppressHydrationWarning>
       <body className="antialiased">
         <script dangerouslySetInnerHTML={{ __html:
           `try{if(!sessionStorage.getItem("_s")){sessionStorage.setItem("_s","1");localStorage.removeItem("theme")}}catch(e){}`

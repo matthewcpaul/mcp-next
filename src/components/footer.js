@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="py-4 px-4 lg:px-8">
       <div className="flex items-center justify-between w-full">
-        <span className="text-base font-medium">
+        <span className="text-base font-medium -tracking-[0.0125em]">
           Deployed {process.env.NEXT_PUBLIC_DEPLOY_DATE || 'Next Deploy'}
         </span>
         <Button

@@ -143,7 +143,7 @@ export function StickyHeader() {
                 className="rounded-full lg:w-8 lg:h-8"
                 unoptimized
               />
-              <span className={`text-base font-medium transition-all duration-150 ease-out ${
+              <span className={`text-base font-medium -tracking-[0.0125em] transition-all duration-150 ease-out ${
                 showName || (menuOpen && !isClosing)
                   ? 'opacity-100 translate-y-0'
                   : isClosing
@@ -162,7 +162,7 @@ export function StickyHeader() {
                 <Link
                   key={href}
                   href={href}
-                  className={`text-base font-medium transition-colors ${
+                  className={`text-base font-medium -tracking-[0.0125em] transition-colors ${
                     isActive(href)
                       ? 'text-foreground'
                       : 'text-[var(--text-tertiary)] hover:text-foreground'
@@ -231,7 +231,7 @@ export function StickyHeader() {
                 key={href}
                 href={href}
                 onClick={closeMenu}
-                className={`text-base font-medium py-3 transition-colors ${
+                className={`text-base font-medium -tracking-[0.0125em] py-3 transition-colors ${
                   isActive(href)
                     ? 'text-foreground'
                     : 'text-[var(--text-tertiary)] hover:text-foreground'

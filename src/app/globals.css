@@ -58,8 +58,7 @@
 }
 
 html {
-  font-feature-settings: "liga" 1, "calt" 1;
-  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings: "liga" 1, "calt" 1, "tnum" 1, "dlig" 1;
 }
 
 .dark {
