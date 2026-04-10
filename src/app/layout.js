@@ -1,8 +1,13 @@
-import { GeistSans } from 'geist/font/sans'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export const metadata = {
   title: "Matthew Paul",
@@ -28,8 +33,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
-      <body>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body className="antialiased">
+        <script dangerouslySetInnerHTML={{ __html:
+          `try{if(!sessionStorage.getItem("_s")){sessionStorage.setItem("_s","1");localStorage.removeItem("theme")}}catch(e){}`
+        }} />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
