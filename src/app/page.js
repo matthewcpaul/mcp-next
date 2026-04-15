@@ -16,7 +16,7 @@ export default function Home() {
     <div className="">
       <main className="flex flex-col pb-12">
         <StickyHeader />
-        <article className="flex flex-col gap-16 md:gap-28 mt-48 md:mt-56 px-4 lg:px-8">
+        <article className="flex flex-col gap-14 md:gap-28 mt-42 md:mt-56 px-4 lg:px-8">
           <div className="flex flex-col">
             <h1 className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">Matthew Paul</h1>
             <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter text-[var(--text-tertiary)]">Software Designer</p>
