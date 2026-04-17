@@ -6,11 +6,31 @@ export default function Projects() {
     <div>
       <main className="flex flex-col pb-12 min-h-[calc(100vh-64px)]">
         <StickyHeader />
-        <article className="flex flex-col gap-16 md:gap-28 mt-48 md:mt-56 px-4 lg:px-8">
+        <article className="flex flex-col gap-14 md:gap-28 mt-48 md:mt-56 px-4 lg:px-8">
           <div className="flex flex-col">
             <h1 className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">Projects</h1>
             <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter text-[var(--text-tertiary)]">Coming soon</p>
           </div>
+          <section className="grid grid-cols-1 gap-y-10 lg:gap-y-16">
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 1
+            </p>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 2
+            </p>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 3
+            </p>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 4
+            </p>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 5
+            </p>
+            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">
+              Project 6
+            </p>
+          </section>
         </article>
       </main>
       <Footer />
