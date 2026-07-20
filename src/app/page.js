@@ -8,6 +8,7 @@ import TestimonialNick from '../../public/images/TestimonialNick.jpeg'
 import TestimonialSteven from '../../public/images/TestimonialSteven.jpeg'
 import TestimonialZack from '../../public/images/TestimonialZack.jpeg'
 import ProjectCard from '../components/project-card'
+import { AnimatedName } from '@/components/animated-name'
 import { StickyHeader } from '@/components/sticky-header'
 import { Footer } from '@/components/footer'
 
@@ -17,10 +18,7 @@ export default function Home() {
       <main className="flex flex-col pb-12">
         <StickyHeader />
         <article className="flex flex-col gap-14 md:gap-28 mt-48 md:mt-56 px-4 lg:px-8">
-          <div className="flex flex-col">
-            <h1 className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter">Matthew Paul</h1>
-            <p className="text-lg xs:text-lg-2 md:text-xl lg:text-xxl font-medium tracking-tighter text-[var(--text-tertiary)]">Software Designer</p>
-          </div>
+          <AnimatedName />
           <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 gap-y-10 lg:gap-y-16">
             <ProjectCard
               videoSrc="/videos/compressed/BubbleNativeMobileTabBar.mp4"
